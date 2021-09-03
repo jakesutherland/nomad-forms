@@ -1,0 +1,58 @@
+&.button-group-field {
+
+	.button-group-item-container {
+		display: inline-block;
+
+		input {
+			position: absolute;
+			opacity: 0;
+
+			& + label {
+				position: relative;
+				cursor: pointer;
+				display: block;
+				padding: 8px 12px;
+				font-family: $font-family;
+				font-size: $font-size;
+				line-height: 1em;
+				border: 2px solid $accent-color;
+				border-left-width: 1px;
+				border-right-width: 1px;
+			}
+			& + label:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				background-color: #FFFFFF;
+				transition: 0.2s;
+			}
+			& + label:hover:before {
+				background-color: rgba(0, 0, 0, 0.12);
+			}
+
+			&:checked + label {
+				color: #FFFFFF;
+				position: relative;
+			}
+			&:checked + label:before {
+				background-color: $accent-color;
+			}
+			&:focus + label {
+				outline: 0;
+				box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+			}
+		}
+
+		&:first-child input + label {
+			border-left-width: 2px;
+		}
+		&:last-child input + label {
+			border-right-width: 2px;
+		}
+	}
+
+}

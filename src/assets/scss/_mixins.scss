@@ -1,0 +1,16 @@
+@mixin field-base {
+	background-color: $white;
+	border-radius: 0;
+	color: $accent-color;
+	font-family: $font-family;
+	font-size: $font-size;
+	padding: 12px 15px;
+	border: $input-border;
+}
+
+@mixin field-focus {
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+	}
+}

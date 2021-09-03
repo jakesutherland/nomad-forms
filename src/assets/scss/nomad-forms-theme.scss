@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixins";
+@import "messages";
+
+.nomad-form {
+
+	.nomad-form-fields {
+
+		.nomad-field {
+
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			.nomad-field-label label {
+				font-family: $font-family;
+				font-size: $font-size;
+				font-weight: bold;
+			}
+
+			// Button Group.
+			@import "fields/button-group.scss";
+
+			// Checkboxes.
+			@import "fields/checkboxes.scss";
+
+			// Input styles.
+			@import "fields/input.scss";
+
+			// Radio Buttons.
+			@import "fields/radios.scss";
+
+			// Select styles.
+			@import "fields/select.scss";
+
+			// Textarea styles.
+			@import "fields/textarea.scss";
+
+			// Toggles.
+			@import "fields/toggles.scss";
+
+		}
+
+		.nomad-field-separator hr {
+			display: block;
+			width: 100%;
+			border: 0;
+			border-top: 1px solid #b8b8b8;
+			margin: 20px auto;
+		}
+
+	}
+
+	@import "form-buttons";
+
+}

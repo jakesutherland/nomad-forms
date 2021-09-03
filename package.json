@@ -1,0 +1,23 @@
+{
+	"name": "nomad-forms",
+	"version": "1.0.0",
+	"description": "A WordPress PHP Composer Package that provides you with an easy way to display and process forms, render and validate fields, and display error/success messages.",
+	"scripts": {
+		"build": "webpack -p",
+		"start": "webpack --watch"
+	},
+	"author": "Jake Sutherland <jake@jakesutherland.com> (https://www.jakesutherland.com)",
+	"license": "MIT",
+	"devDependencies": {
+		"@wordpress/browserslist-config": "^2.6.0",
+		"autoprefixer": "^9.6.1",
+		"css-loader": "^3.2.0",
+		"glob": "^7.1.6",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.12.0",
+		"postcss-loader": "^3.0.0",
+		"sass-loader": "^7.1.0",
+		"webpack": "^4.39.1",
+		"webpack-cli": "^3.3.6"
+	}
+}
