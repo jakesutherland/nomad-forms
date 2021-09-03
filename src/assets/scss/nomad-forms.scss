@@ -1,0 +1,159 @@
+.nomad-form {
+
+	display: inline-block;
+
+	&.labels-position-inline {
+
+		.nomad-form-fields {
+
+			display: flex;
+			flex-direction: column;
+
+			.nomad-field {
+				flex: 1 0 auto;
+				display: flex;
+
+				.nomad-field-label {
+					flex: 0 0 auto;
+					width: 200px;
+					margin-right: 10px;
+				}
+
+				.nomad-field-container {
+					flex: 1 0 auto;
+				}
+			}
+
+		}
+
+		.nomad-form-actions {
+			margin-left: 210px;
+		}
+
+	}
+
+	&.labels-position-top {
+
+		.nomad-form-fields .nomad-field {
+			.nomad-field-label {
+				display: block;
+			}
+			.nomad-field-container {
+				margin-top: 5px;
+			}
+		}
+
+	}
+
+	&.labels-text-left {
+
+		.nomad-form-fields .nomad-field .nomad-field-label {
+			text-align: left;
+		}
+
+	}
+
+	&.labels-text-center {
+
+		.nomad-form-fields .nomad-field .nomad-field-label {
+			text-align: center;
+		}
+
+	}
+
+	&.labels-text-right {
+
+		.nomad-form-fields .nomad-field .nomad-field-label {
+			text-align: right;
+		}
+
+	}
+
+	.nomad-form-fields {
+
+		.nomad-field {
+
+			&.inline {
+
+				&.checkboxes-field .checkbox-container {
+					display: inline-block;
+					margin-right: 10px;
+				}
+				&.radios-field .radio-container {
+					display: inline-block;
+					margin-right: 10px;
+				}
+
+			}
+
+			&.checkboxes-field .checkbox-container,
+			&.radios-field .radio-container {
+				padding-bottom: 10px;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+			}
+
+			&.toggle-field .toggle-container,
+			&.toggles-field .toggle-container {
+				display: flex;
+				align-items: flex-start;
+				padding-bottom: 10px;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+				input.toggle {
+					margin-right: 10px;
+				}
+				label {
+					margin-top: 4px;
+				}
+			}
+
+		}
+
+	}
+
+	.nomad-form-actions {
+
+		margin-top: 20px;
+
+	}
+
+}
+
+
+body[data-nomad-breakpoint=mobile] {
+
+	.nomad-form {
+
+		&.labels-position-inline {
+
+			.nomad-form-fields {
+
+				display: block;
+
+				.nomad-field {
+					display: block;
+
+					.nomad-field-label {
+						display: block;
+					}
+
+					.nomad-field-container {
+						display: block;
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

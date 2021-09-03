@@ -1,0 +1,16 @@
+{
+	"name": "jakesutherland/nomad-forms",
+	"version": "1.0.0",
+	"description": "A WordPress PHP Composer Package that provides you with an easy way to display and process forms, render and validate fields, and display error/success messages.",
+	"require": {
+		"jakesutherland/nomad-helpers": "^1.2",
+		"jakesutherland/nomad-validate": "^1.1"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jake Sutherland",
+			"email": "jake@jakesutherland.com"
+		}
+	]
+}

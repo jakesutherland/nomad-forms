@@ -1,0 +1,33 @@
+&.select-field {
+
+	select {
+		@include field-base;
+		line-height: 1em;
+		width: 320px;
+		max-width: 100%;
+
+		@include field-focus;
+	}
+
+	&.country-field select,
+	&.state-field select {
+		width: auto;
+	}
+
+	&.am-pm-field select,
+	&.day-field select,
+	&.hour-field select,
+	&.minute-field select {
+		width: 80px;
+	}
+
+	&.year-field select {
+		width: 100px;
+	}
+
+	&.month-field select,
+	&.weekday-field select {
+		width: 150px;
+	}
+
+}

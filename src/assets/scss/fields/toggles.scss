@@ -1,0 +1,58 @@
+&.toggle-field,
+&.toggles-field {
+
+	label {
+		font-family: $font-family;
+	}
+
+	.toggle[type="checkbox"],
+	.toggle[type="checkbox"] {
+		appearance: none;
+		position: relative;
+		width: 42px;
+		height: 24px;
+		background: #FFFFFF;
+		border: 2px solid $accent-color;
+		border-radius: 0;
+		margin: 0;
+		transition: 0.2s;
+
+		@include field-focus;
+
+		&:after {
+			content: '';
+			width: 14px;
+			height: 14px;
+			background: $accent-color;
+			position: absolute;
+			top: 50%;
+			left: 2px;
+			transform: translateY(-50%);
+			margin: auto;
+			transition: 0.2s;
+		}
+		&:checked {
+			background: $accent-color;
+
+			&:before {
+				content: '';
+			}
+
+			&:after {
+				left: 22px;
+				background: #FFFFFF;
+			}
+			&:disabled {
+				background: #CCCCCC;
+			}
+		}
+		&:disabled {
+			background: #CCCCCC;
+
+			&:after {
+				background: #808080;
+			}
+		}
+	}
+
+}

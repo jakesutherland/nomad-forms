@@ -1,0 +1,102 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5ed9b591c9b500792b31489a30ba55f6",
+    "packages": [
+        {
+            "name": "jakesutherland/nomad-helpers",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jakesutherland/nomad-helpers.git",
+                "reference": "eae3aac8e05017061d02ce131e91188a21d67392"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jakesutherland/nomad-helpers/zipball/eae3aac8e05017061d02ce131e91188a21d67392",
+                "reference": "eae3aac8e05017061d02ce131e91188a21d67392",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jake Sutherland",
+                    "email": "jake@jakesutherland.com",
+                    "homepage": "https://www.jakesutherland.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A WordPress PHP Composer package that provides helper functions and utilities that are used in other Nomad Composer Packages.",
+            "homepage": "https://jakesutherland.com",
+            "support": {
+                "issues": "https://github.com/jakesutherland/nomad-helpers/issues",
+                "source": "https://github.com/jakesutherland/nomad-helpers"
+            },
+            "time": "2021-08-26T00:54:26+00:00"
+        },
+        {
+            "name": "jakesutherland/nomad-validate",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jakesutherland/nomad-validate.git",
+                "reference": "65bc77901f2262493f0743c3a1205ae2ffc61202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jakesutherland/nomad-validate/zipball/65bc77901f2262493f0743c3a1205ae2ffc61202",
+                "reference": "65bc77901f2262493f0743c3a1205ae2ffc61202",
+                "shasum": ""
+            },
+            "require": {
+                "jakesutherland/nomad-helpers": "^1.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jake Sutherland",
+                    "email": "jake@jakesutherland.com",
+                    "homepage": "https://www.jakesutherland.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A WordPress PHP Composer Package that provides you with an easy way to validate data against a set of rules and generate error messages.",
+            "homepage": "https://jakesutherland.com",
+            "support": {
+                "issues": "https://github.com/jakesutherland/nomad-validate/issues",
+                "source": "https://github.com/jakesutherland/nomad-validate"
+            },
+            "time": "2021-08-26T01:21:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
