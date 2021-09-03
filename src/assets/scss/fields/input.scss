@@ -1,0 +1,22 @@
+&.input-field {
+
+	input {
+		@include field-base;
+		line-height: 1em;
+		width: 320px;
+		max-width: 100%;
+
+		@include field-focus;
+	}
+
+	&.number-field input {
+		width: 80px;
+	}
+
+	&.date-field input,
+	&.phone-field input,
+	&.time-field input {
+		width: 150px;
+	}
+
+}

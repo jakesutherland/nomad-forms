@@ -1,0 +1,11 @@
+&.textarea-field {
+	textarea {
+		@include field-base;
+		line-height: 1.5em;
+		width: 320px;
+		height: 160px;
+		max-width: 100%;
+
+		@include field-focus;
+	}
+}
